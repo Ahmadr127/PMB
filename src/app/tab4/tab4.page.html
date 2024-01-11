@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title><b>Data Calon Mahasiswa</b></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding" color="light">
+  <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <h2>Data Mahasiswa</h2>
+  <div class="table-wrapper">
+    <table class="fl-table">
+      <thead>
+        <tr>
+          <td>No.</td>
+          <td>Nama</td>
+          <td>Jenis Kelamin</td>
+          <td>Nomor Handphone</td>
+          <td>Email</td>
+          <td>Asal Sekolah</td>
+          <td>Prodi</td>
+          <td>Jenjang</td>
+          <td>Kelas</td>
+          <td>Info Kampus</td>
+          <td>Status</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of allData; let i = index">
+          <td class="text-black">{{ i + 1 }}</td>
+          <td class="text-black">{{data.nama_mahasiswa}}</td>
+          <td class="text-black">{{data.jenis_kelamin}}</td>
+          <td class="text-black">{{data.nomor}}</td>
+          <td class="text-black">{{data.email}}</td>
+          <td class="text-black">{{data.asal_sekolah}}</td>
+          <td class="text-black">{{data.prodi}}</td>
+          <td class="text-black">{{data.jenjang}}</td>
+          <td class="text-black">{{data.kelas}} </td>
+          <td class="text-black">{{data.info}} </td>
+          <td class="text-black">{{data.status}} <span *ngif data.status === "Menunggu varifikasi" style="color: red;">Menunggu varifikasi</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</ion-content>

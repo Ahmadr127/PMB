@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      <b>Informasi alur pencairan fee</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container bg-white">
+    <div class="timeline-block timeline-block-right">
+      <div class="marker"><span>1</span></div>
+      <div class="timeline-content">
+        <h5 id="Dpendaftaran">Data Pendaftaran</h5>
+        <span>Pengecekan nominal fee pendaftaran</span>
+        <p>
+        Dapat dicek melalui <b>Data Pendaftaran.</b> pastikan terdapat jumlah fee pendaftaran. 
+        </p>
+      </div>
+    </div>
+    <ion-alert
+      trigger="Dpendaftaran"
+      header="Mengisi Pendaftaran"
+      message="Pengecekan nominal fee pendaftaran  Dapat dicek melalui Data Pendaftaran. pastikan terdapat jumlah fee pendaftaran. "
+      [buttons]="alertButtons"
+    ></ion-alert>
+
+    <div class="timeline-block timeline-block-left">
+      <div class="marker"><span>2</span></div>
+      <div class="timeline-content">
+        <h5 id="baum">Konfirmasi kebagian BAUM</h5>
+        <span>Kantor BAUM</span>
+        <p>
+          Silahkan anda mengkonfirmasi dengan menunjukkan daftar data pendaftaran dengan status <span>"Verivikasi pendaftaran ok"</span>
+        </p>
+      </div>
+    </div>
+    <ion-alert
+      trigger="baum"
+      header="Kantor BAUM"
+      message="Silahkan anda mengkonfirmasi dengan menunjukkan daftar data pendaftaran dengan status Verivikasi pendaftaran ok"
+      [buttons]="alertButtons"
+    ></ion-alert>
+
+    <div class="timeline-block timeline-block-right">
+      <div class="marker"><span>3</span></div>
+      <div class="timeline-content">
+        <h5 id="pengumuman">Proses pencairan fee selesai</h5>
+        <span
+          ></span
+        >
+        <p>
+        </p>
+      </div>
+    </div>
+    <ion-alert
+      trigger="pengumuman"
+      header=""
+      message="Proses pencairan fee selesai"
+      [buttons]="alertButtons"
+    ></ion-alert>
+
+  </div>
+</ion-content>

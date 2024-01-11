@@ -1,0 +1,133 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      <b>Pendaftaran Calon Mahasiswa</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding" color="light">
+  <div class="container border rounded-1 p-3 bg-white shadow box-area">
+    <ion-input
+      [(ngModel)]="nama_mahasiswa"
+      aria-label="Success input"
+      color="success"
+      class="custom"
+      label="Nama Lengkap"
+      polaceholder="Masukkan nama lengkap anda"
+      labelPlacement="floating"
+    ></ion-input>
+    <ion-item>
+      <ion-select
+        [(ngModel)]="jenis_kelamin"
+        class="never-flip"
+        toggleIcon="caret-down-sharp"
+        interface="popover"
+        label="Jenis Kelamin"
+        placeholder="Select"
+      >
+        <ion-select-option value="perempuan">Perempuan</ion-select-option>
+        <ion-select-option value="laki-laki">laki-laki</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-input
+      [(ngModel)]="nomor"
+      aria-label="Success input"
+      color="success"
+      class="custom"
+      label="Nomor Whatsapp"
+      polaceholder="Masukkan Nomor Whatsapp anda"
+      labelPlacement="floating"
+      type="tel"
+    ></ion-input>
+    <ion-input
+      [(ngModel)]="email"
+      aria-label="Success input"
+      color="success"
+      class="custom"
+      label="Email"
+      polaceholder="Masukkan email anda"
+      labelPlacement="floating"
+      type="email"
+    ></ion-input>
+    <ion-input
+      [(ngModel)]="asal_sekolah"
+      aria-label="Success input"
+      color="success"
+      class="custom"
+      label="Asal Sekolah"
+      polaceholder="Masukkan Asal Sekolah anda"
+      labelPlacement="floating"
+    ></ion-input>
+    <ion-item>
+      <ion-select
+        [(ngModel)]="prodi"
+        class="never-flip"
+        toggleIcon="caret-down-sharp"
+        interface="popover"
+        label="Prodi"
+        placeholder="Select"
+      >
+        <ion-select-option value="Teknik informatika"
+          >Teknik Informatika</ion-select-option
+        >
+        <ion-select-option value="Sistem informasi"
+          >Sistem Informasi
+        </ion-select-option>
+        <ion-select-option value="Teknologi informasi"
+          >Teknologi informasi
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-select
+        [(ngModel)]="jenjang"
+        class="never-flip"
+        toggleIcon="caret-down-sharp"
+        interface="popover"
+        label="Jenjang"
+        placeholder="Select"
+      >
+        <ion-select-option value="S1">Sarjana(S1)</ion-select-option>
+        <ion-select-option value="S2">Sarjana(S2)</ion-select-option>
+        <ion-select-option value="S3">Sarjana(S3)</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-select
+        class="never-flip"
+        [(ngModel)]="kelas"
+        toggleIcon="caret-down-sharp"
+        interface="popover"
+        label="Kelas"
+        placeholder="Select"
+      >
+        <ion-select-option value="A">Kelas A</ion-select-option>
+        <ion-select-option value="B">Kelas B</ion-select-option>
+        <ion-select-option value="C">Kelas C</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-select
+        [(ngModel)]="info"
+        class="never-flip"
+        toggleIcon="caret-down-sharp"
+        interface="popover"
+        label="Info kampus"
+        placeholder="Select"
+      >
+        <ion-select-option value="dosen">Dosen</ion-select-option>
+        <ion-select-option value="staf">Staf</ion-select-option>
+        <ion-select-option value="mahasiswa">Mahasiswa</ion-select-option>
+        <ion-select-option value="mahasiswa">Lainnya</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <button
+      (click)="addData()"
+      class="btn btn-primary w-100"
+      style="margin: 10px 0"
+    >
+      Daftar
+    </button>
+  </div>
+</ion-content>

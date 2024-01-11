@@ -1,0 +1,103 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title><b>Informasi alur PMB</b></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="timeline-block timeline-block-right">
+      <div class="marker"><span>1</span></div>
+      <div class="timeline-content">
+        <h5 id="pendaftaran">Pendaftaran</h5>
+        <span>Melakukan Pendaftaran</span>
+        <p>
+          Dapat dilakukan mulai tanggal 2 Januari s/d 21 Agustus 2024. Biaya
+          pendaftaran sebesar <span>Rp.300.000,00</span>.
+        </p>
+      </div>
+    </div>
+    <ion-alert
+      trigger="pendaftaran"
+      header="Melakukan Pendaftaran"
+      message="Dapat dilakukan mulai tanggal 2 Januari s/d 21 Agustus 2024. Biaya pendaftaran sebesar Rp.300.000,00"
+      [buttons]="alertButtons"
+    ></ion-alert>
+
+    <div class="timeline-block timeline-block-left">
+      <div class="marker"><span>2</span></div>
+      <div class="timeline-content">
+        <h5 id="tpa">Mengikuti test potensi akademik dan wawancara</h5>
+        <span>Test Potensi akademin (TPA)</span>
+        <p>
+          Kegiatan Ini dilakukan untuk mengetahui kompetensi pengetahuan umum
+          dimana ada 3 jenis pertanyaan diantaranya adalah pertanyaan
+          <span>logika, matematika dan umum</span>.
+        </p>
+      </div>
+    </div>
+    <ion-alert
+      trigger="tpa"
+      header="Test Potensi akademin (TPA) dan wawancara"
+      message="Kegiatan Ini dilakukan untuk mengetahui kompetensi pengetahuan umum dimana ada 3 jenis pertanyaan diantaranya adalah pertanyaan logika, matematika dan umum. TPA dilakukan menggunakan
+      ujian berbasis komputer yang diselenggarakan secara offline. Wawancara kegiatan digunakan untuk mengetahui minat dan bakat calon mahasiswa."
+      [buttons]="alertButtons"
+    ></ion-alert>
+
+    <div class="timeline-block timeline-block-right">
+      <div class="marker"><span>3</span></div>
+      <div class="timeline-content">
+        <h5 id="pengumuman">Pengumuman hasil TPA dan melakukan Daftar Ulang</h5>
+        <span
+          >Kegiatan daftar ulang bisa dilakukan secara online atau ofline</span
+        >
+        <p>
+          Setelah ada pengumuman mengenai lolos atau tidaknya terhadap nilai
+          TPA, maka calon mahasiswa yang dinyatakan lolos bisa langsung
+          melakukan Daftar Ulang.
+        </p>
+      </div>
+    </div>
+    <ion-alert
+      trigger="pengumuman"
+      header="Pengumuman hasil TPA dan melakukan Daftar Ulang"
+      message="Kegiatan daftar ulang bisa dilakukan secara online atau ofline. Setelah ada pengumuman mengenai lolos atau tidaknya terhadap nilai
+      TPA, maka calon mahasiswa yang dinyatakan lolos bisa langsung
+      melakukan Daftar Ulang."
+      [buttons]="alertButtons"
+    ></ion-alert>
+
+    <div class="timeline-block timeline-block-left">
+      <div class="marker"><span>4</span></div>
+      <div class="timeline-content">
+        <h5 id="prastudi">Melakukan Kegiatan Pra-Studi</h5>
+        <span>Pelaksanaan kegiatan Pra-Studi dilaksanakan di 1 lokasi</span>
+        <p>
+          Bertempat di Universitas Binaniaga Indonesia, Fakultas Ekonomi dan
+          komputer,Gedung Kampus Padjajaran.
+        </p>
+      </div>
+    </div>
+    <ion-alert
+      trigger="prastudi"
+      header="Pelaksanaan kegiatan Pra-Studi dilaksanakan di 1 lokasi"
+      message="Bertempat di Universitas Binaniaga Indonesia, Fakultas Ekonomi dan
+      komputer,Gedung Kampus Padjajaran."
+      [buttons]="alertButtons"
+    ></ion-alert>
+
+    <div class="timeline-block timeline-block-right">
+      <div class="marker"><span>5</span></div>
+      <div class="timeline-content">
+        <h5 id="Finish">Finish</h5>
+        <span></span>
+      </div>
+    </div>
+    <ion-alert
+      trigger="Finish"
+      header="Selamat 👏"
+      message="Anda Telah resmi menjadi mahasiswa di Universitas Binaniaga Indonesia"
+      [buttons]="alertButtons"
+    ></ion-alert>
+  </div>
+</ion-content>
